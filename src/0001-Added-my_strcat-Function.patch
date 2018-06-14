@@ -1,0 +1,44 @@
+From bc0105f592a0ee93df6cba6c544fe7e492137aff Mon Sep 17 00:00:00 2001
+From: "rajat.agarwal" <rajatbansal96@gmail.com>
+Date: Thu, 14 Jun 2018 10:36:35 +0530
+Subject: [PATCH] Added my_strcat Function
+
+---
+ src/string_operations.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/src/string_operations.c b/src/string_operations.c
+index 0848fa1..c9cd041 100644
+--- a/src/string_operations.c
++++ b/src/string_operations.c
+@@ -12,6 +12,16 @@ char *p=t;
+ while(*t++=*s++);
+ return p;
+ }
++char *my_strcat(char *t,char *s)
++{
++size_t *p,*r;
++*p=my_strlen(s[i]);
++*r=my_strlen([i]);
++for(int i=(int)(*p);i<(int)(*p+*r);i++){
++s[i]=u[i-(int)(*p);
++}s[i]='\0';
++return p
++}
+ int main(void)
+ {
+ int i;
+@@ -20,6 +30,10 @@ char *s[]={
+ "Git tutorials",
+ "Tutorials Point"
+ };
++char *u[]={
++"Git tutorials",
++"Tutorials Point"
++};
+ for(i=0;i<2;++i)
+ printf("string lenght of %s = %d\n",s[i],my_strlen(s[i]));
+ printf("%s\n",my_strcpy(p1,"Hello, World !!!"));
+-- 
+2.17.1.windows.2
+
