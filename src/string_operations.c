@@ -12,11 +12,25 @@ char *p=t;
 while(*t++=*s++);
 return p;
 }
+char *my_strcat(char *t,char *s)
+{
+size_t *p,*r;
+*p=my_strlen(s[i]);
+*r=my_strlen([i]);
+for(int i=(int)(*p);i<(int)(*p+*r);i++){
+s[i]=u[i-(int)(*p);
+}s[i]='\0';
+return p
+}
 int main(void)
 {
 int i;
 char p1[32];
 char *s[]={
+"Git tutorials",
+"Tutorials Point"
+};
+char *u[]={
 "Git tutorials",
 "Tutorials Point"
 };
